@@ -1,11 +1,12 @@
-<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>АкваВнуково</title><link rel="stylesheet" href="./styles.css"></head><body>
-<main id="app" class="shell">
-<section id="setup" class="panel hidden"><h1>Первый запуск</h1><p class="muted">Введите настройки Supabase для этого браузера.</p><label>Supabase URL<input id="supabase-url" type="url"></label><label>Publishable / anon key<input id="supabase-key" type="password"></label><button id="save-config">Сохранить и продолжить</button></section>
-<section id="auth" class="panel hidden"><h1>АкваВнуково</h1><p class="muted">Тестовая версия нового приложения</p><form id="login-form"><label>Email<input id="email" type="email" required></label><label>Пароль<input id="password" type="password" required></label><button>Войти</button></form><p id="auth-error" class="error"></p></section>
-<section id="workspace" class="hidden">
-<header class="brand"><div class="brand-mark">АВ</div><div class="brand-title"><strong>АкваВнуково</strong><select id="instructor-select"></select></div><button id="logout" class="icon-button">Выйти</button></header>
-<nav class="nav"><button class="tab active" data-screen="schedule">◫<span>Расписание</span></button><button class="tab" data-screen="clients">👥<span>Клиенты</span></button><button class="tab" data-screen="analytics">▥<span>Аналитика</span></button><button class="tab" data-screen="help">📖<span>Инструкция</span></button></nav>
-<section id="schedule" class="screen"><div class="seg"><button class="seg-active">День</button><button>Неделя</button><button>Месяц</button><button>Общее расписание</button></div><div class="schedule-head"><button id="prev-day" class="arrow">‹</button><div><h2>Расписание</h2><div id="day-label" class="muted"></div></div><button id="next-day" class="arrow">›</button><input id="schedule-date" type="date"></div><div id="schedule-list" class="cards"></div></section>
-<section id="clients" class="screen hidden"><div class="section-head"><h2>Клиенты</h2><input id="client-search" placeholder="Имя или телефон"></div><div class="filters"><button class="filter active">Все</button><button class="filter">Должники</button><button class="filter">Спящие</button></div><div id="clients-list" class="cards"></div></section>
-<section id="analytics" class="screen hidden"><div class="section-head"><h2>Аналитика</h2></div><div class="metrics"><div><b id="m-clients">—</b><span>Клиентов</span></div><div><b id="m-lessons">—</b><span>Занятий сегодня</span></div></div></section><section id="help" class="screen hidden"><div class="section-head"><h2>Инструкция</h2></div><div class="card"><strong>Новая версия приложения</strong><p class="muted">Разделы переносятся поэтапно. Старое приложение продолжает работать отдельно.</p></div></section><p id="data-error" class="error"></p>
-</section></main><script type="module" src="./app.js"></script></body></html>
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#e6f1fb" />
+    <title>АкваВнуково</title>
+    <script type="module" crossorigin src="./app.js"></script>
+    <link rel="stylesheet" crossorigin href="./styles.css" />
+  </head>
+  <body><div id="root"></div></body>
+</html>
