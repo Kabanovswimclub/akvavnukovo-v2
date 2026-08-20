@@ -1,0 +1,9 @@
+{
+  "name": "АкваВнуково — личный кабинет",
+  "short_name": "АкваВнуково",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#eaf5ff",
+  "theme_color": "#185fa5",
+  "icons": [{ "src": "/akva-icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }]
+}
