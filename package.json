@@ -3,6 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "node -e \"const fs=require('fs');fs.mkdirSync('dist',{recursive:true});for(const f of ['index.html','app.js','styles.css'])fs.copyFileSync(f,'dist/'+f)\""
+    "build": "node -e \"const fs=require('fs');fs.mkdirSync('dist',{recursive:true});for(const f of ['index.html','app.js','styles.css','manifest.webmanifest','akva-icon.svg','sw.js'])fs.copyFileSync(f,'dist/'+f)\""
   }
 }
